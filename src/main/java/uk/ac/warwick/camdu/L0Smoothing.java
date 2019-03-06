@@ -50,7 +50,7 @@ import static java.lang.Math.*;
 
 /**
  *
- * autoStageRepro - Fiji routine to generate stage reproducibility analysis (max. shifts in X/Y) from an image
+ * L0Smoothing - Fiji routine to generate stage reproducibility analysis (max. shifts in X/Y) from an image
  *<p>
  * This class implements a Fiji routine that reads image files, detects beads, crops them, tracks them over time
  * (using TrackMate) and retrieves the maximum X/Y shifts for each individual bead. Finally, it
@@ -62,8 +62,8 @@ import static java.lang.Math.*;
  * @version 1.0
  */
 @SuppressWarnings({"unchecked"})
-@Plugin(type = Command.class, menuPath = "Plugins>autoQC>autoStageRepro")
-public class autoStageRepro<T extends RealType<T>> extends Component implements Command {
+@Plugin(type = Command.class, menuPath = "Plugins>L0 Smoothing")
+public class L0Smoothing<T extends RealType<T>> extends Component implements Command {
 
     @Parameter
     private ImageJ ij;
@@ -816,7 +816,7 @@ public class autoStageRepro<T extends RealType<T>> extends Component implements 
 
         // invoke the plugin
         // ij.command().run(autoColoc.class, true);
-        autoStageRepro main_class = new autoStageRepro();
+        L0Smoothing main_class = new L0Smoothing();
         main_class.run();
     }
 }

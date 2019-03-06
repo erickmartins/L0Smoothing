@@ -70,19 +70,19 @@
 		<connection>scm:git:git://github.com/erickmartins/L0Smoothing</connection>
 		<developerConnection>scm:git:git@github.com:erickmartins/L0Smoothing</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/erickmartins/auto_qc</url>
+		<url>https://github.com/erickmartins/L0Smoothing</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/erickrmartins/auto_qc/issues</url>
+		<url>https://github.com/erickrmartins/L0Smoothing/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>uk.ac.warwick.camdu.autoqc</package-name>
-		<main-class>uk.ac.warwick.camdu.autoQC</main-class>
+		<package-name>uk.ac.warwick.camdu.L0Smoothing</package-name>
+		<main-class>uk.ac.warwick.camdu.L0Smoothing</main-class>
 		<license.licenseName>gpl</license.licenseName>
 		<license.copyrightOwners>University of Warwick</license.copyrightOwners>
 		<imagej.app.directory>/home/erick/Fiji.app/</imagej.app.directory>
@@ -102,7 +102,7 @@
 			<artifactId>imagej</artifactId>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>ome</groupId>
 			<artifactId>formats-api</artifactId>
 		</dependency>
@@ -137,7 +137,7 @@
 			<groupId>sc.fiji</groupId>
 			<artifactId>TrackMate_</artifactId>
 			<version>4.0.0</version>
-		</dependency>
+		</dependency>-->
 
 
 	</dependencies>
